@@ -1,0 +1,125 @@
+body {
+  background: linear-gradient(to right, #00feba, #5b548a);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-box {
+  background: rgba(255, 255, 255, 0.3);
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 250px;
+}
+
+/* Button styling */
+#getWeatherbtn {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+/* Icon inside the button */
+#getWeatherbtn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+#getWeatherbtn:hover {
+  background-color:gray;
+}
+
+#getWeatherbtn:active {
+  background-color:rgb(75, 73, 73);
+}
+
+
+
+/* Optional: style output areas */
+#temp-div p {
+  font-size:60px;
+  margin-top:-30px;
+}
+#weather-info {
+  font-size:20px;
+}
+
+#weather-icon {
+  width:200px;
+  height:200px;
+  margin:0 auto 10px;
+  margin-bottom:0;
+  display:none;
+}
+
+#hourly-forecast {
+  margin-top:50px;
+  overflow-x:auto;
+  white-space:nowrap;
+  display:flex;
+  justify-content:space-between;
+}
+
+.hourly-item {
+  flex:0 0 auto;
+  width:80px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-right:10px;
+  color:rgb(5, 5, 5);
+}
+
+.hourly-item img {
+  width:30px;
+  height:30px;
+  margin-bottom:5px;
+}
+
+#hourly-heading {
+  color:white;
+  margin-top:10px;
+}
